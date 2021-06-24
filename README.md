@@ -30,7 +30,7 @@ mvnw.cmd clean package
 sh mvnw clean package
 ```
 
-Alternatively, you can download the jar from the [release page](https://github.com/ThatcherDev/ASLGrammarTranslator/releases).
+Alternatively, you can download the jar from the [release page](https://github.com/thatcherclough/ASLGrammarTranslator/releases).
 
 ## Credits
 - [Harsh Bhavsar](https://github.com/harshbhavsar) for the algorithm used to convert an english sentence to a grammatically correct ASL sentence. That repository can be found [here](https://github.com/harshbits/english-asl-algorithm).
@@ -47,7 +47,6 @@ Arguments:
 	-h, --help			Display this message.
 	-v, --version			Display current version.
 	-i, --input			Specify input sentence (Surround with quotes).
-
 ```
 
 ## License
