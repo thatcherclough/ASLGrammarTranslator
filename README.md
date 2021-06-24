@@ -37,7 +37,7 @@ Alternatively, you can download the jar from the [release page](https://github.c
 
 ## Usage
 ```
-java -jar aslgrammar.jar
+java -jar aslgrammartranslator.jar
 ASLGrammarTranslator: An English to American Sign Language grammar translator (1.0.0)
 
 Usage:
