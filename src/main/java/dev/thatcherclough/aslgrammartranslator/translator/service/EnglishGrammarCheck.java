@@ -37,11 +37,13 @@ public class EnglishGrammarCheck {
 			StringBuffer sb = new StringBuffer(sentence);
 			int difference = 0;
 			for (RuleMatch match : matches) {
-				suggestions.put(match.getFromPos() + "-" + match.getToPos(), match.getMessage());
-				sb.replace(match.getFromPos() + difference, match.getToPos() + difference,
-						match.getSuggestedReplacements().get(0));
-				difference = difference + match.getSuggestedReplacements().get(0).length()
-						- (match.getToPos() - match.getFromPos());
+				if (match.getSuggestedReplacements().size() != 0) {
+					suggestions.put(match.getFromPos() + "-" + match.getToPos(), match.getMessage());
+					sb.replace(match.getFromPos() + difference, match.getToPos() + difference,
+							match.getSuggestedReplacements().get(0));
+					difference = difference + match.getSuggestedReplacements().get(0).length()
+							- (match.getToPos() - match.getFromPos());
+				}
 			}
 			ret.setSentence(sb.toString());
 			ret.setSuggestions(suggestions);
